@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arise Gym</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+<!-- AOS Animation -->
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="loader">
+     <h1>ARISE</h1>
+  </div>
+  <div id="progress-bar"></div>
+  <div class="cursor"></div>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+  <img src="assets/images/logo.png" class="logo">
+  <nav id="nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="workouts.html">Workouts</a>
+  <a href="trainers.html">Trainers</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="membership.html">Plans</a>
+  <a href="contact.html">Contact</a>
+</nav>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero reveal" data-aos="fade-up">
+  <div data-aos="fade-up">
+    <h2 class="hero-title">
+  <span>UNLEASH</span>
+  <span> YOUR </span>
+  <span> POWER</span>
+</h2>
+    <p>No Limits. No Excuses.</p>
+    <button class="btn glow">Start Now</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="section reveal" data-aos="fade-right">
+  <h2>Why Choose Us</h2>
+  <p>Elite training environment with world-class equipment.</p>
+</section>
+<!-- WORKOUTS PREVIEW -->
+
+<section class="section reveal" data-aos="fade-up">
+  <h2>Our Workouts</h2>
+
+  <div class="workout-container">
+
+    <div class="workout-card">
+      <img src="assets/images/workouts/work1.jpg">
+      <h3>Strength</h3>
+    </div>
+
+    <div class="workout-card">
+      <img src="assets/images/workouts/work2.jpg">
+      <h3>Cardio</h3>
+    </div>
+
+    <div class="workout-card">
+      <img src="assets/images/workouts/work3.jpg">
+      <h3>Yoga</h3>
+    </div>
+
+    <div class="workout-card">
+      <img src="assets/images/workouts/work4.jpg">
+      <h3>combat sports</h3>
+    </div>
+
+  </div>
+
+  <div style="text-align:center; margin-top:20px;">
+    <a href="workouts.html" class="btn glow">View All Workouts</a>
+  </div>
+</section>
+
+
+<!-- TRAINERS -->
+
+<section id="trainers" class="section reveal" data-aos="fade-up">
+  <h2 data-aos="fade-up">Elite Trainers</h2>
+  <div class="grid">
+  <div class="card" data-aos="zoom-in">
+    <img src="assets/images/trainers/trainer1.jpg" data-aos="fade-up">
+    <h3>John Beast</h3>
+  </div>
+
+  <div class="card" data-aos="zoom-in">
+    <img src="assets/images/trainers/trainer2.jpg" data-aos="fade-up">
+    <h3>Sarah Flex</h3>
+  </div>
+
+  <div class="card" data-aos="zoom-in">
+    <img src="assets/images/trainers/trainer3.jpg" data-aos="fade-up">
+    <h3>Mike Titan</h3>
+  </div>
+</div>
+
+</section>
+
+<!-- GALLERY -->
+  <section id="gallery" class="section reveal" data-aos="fade-up">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="assets/images/gallery/gym1.jpg" data-aos="fade-up">
+    <img src="assets/images/gallery/gym2.jpg" data-aos="fade-up">
+    <img src="assets/images/gallery/gym3.jpg" data-aos="fade-up">
+  </div>
+</section>
+
+<!-- PRICING -->
+
+<section id="membership" class="section reveal" data-aos="fade-up">
+  <h2>Membership Plans</h2>
+
+  <div class="pricing">
+
+    <div class="price-card">
+      <h3>Basic</h3>
+      <p>₹999/month</p>
+      <p>Gym Access</p>
+      <button class="btn glow">Join Now</button>
+    </div>
+
+    <div class="price-card popular">
+      <h3>Pro</h3>
+      <p>₹1999/month</p>
+      <p>Gym + Trainer</p>
+      <button class="btn glow">Join Now</button>
+    </div>
+
+    <div class="price-card">
+      <h3>Elite</h3>
+      <p>₹2999/month</p>
+      <p>All Access + Diet Plan</p>
+      <button class="btn glow">Join Now</button>
+    </div>
+
+  </div>
+</section>
+<!-- BMI CALCULATOR -->
+
+<section class="section reveal" id="bmi">
+  <h2>Check Your BMI</h2>
+
+  <div class="bmi-box">
+    <input type="number" id="height" placeholder="Height (cm)">
+    <input type="number" id="weight" placeholder="Weight (kg)">
+
+    <button class="btn glow" onclick="calculateBMI()">Calculate</button>
+
+    <p id="result"></p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section reveal" data-aos="fade-up">
+  <h2>Contact</h2>
+  <input type="text" placeholder="Name">
+  <input type="email" placeholder="Email">
+  <button class="btn">Send</button>
+</section>
+
+<footer>
+  <p>© 2026 Arise Gym</p>
+</footer>
+
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>AOS.init();</script>
+
+
+<!-- LIGHTBOX START -->
+<div id="lightbox">
+
+  <span id="close">&times;</span>
+
+  <span id="prev">&#10094;</span>
+
+  <img id="lightbox-img" src="" alt="">
+
+  <span id="next">&#10095;</span>
+
+</div>
+
+<script src="./assets/js/script.js"></script>
+<script src="assets/js/animations.js"></script>
+</body>
+</html>
