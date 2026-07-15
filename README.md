@@ -3,7 +3,7 @@
 A fully responsive gym website built with HTML, CSS and JavaScript.
 
 ## Live Demo
-[View Live Site](your-netlify-link-here)
+[View Live Site](https://candid-hotteok-70a4d5.netlify.app/).
 
 ## Pages
 - Home
